@@ -2,7 +2,7 @@
 require 'httparty'
 
 module Lti2Tp
-  class RegistrationsController < InheritedResources::Base
+  class RegistrationsController
     protect_from_forgery :except => :create
 
     include Lti2Commons
